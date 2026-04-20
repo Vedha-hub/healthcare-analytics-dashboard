@@ -1,14 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontSize: {
-        'doc-body': '1.25rem', // Large, readable text
-        'doc-header': '4rem',  // Massive, clean title
+        'doc-title': '4.5rem', // For the massive blue header
+        'doc-label': '1.25rem', // For the neat lab value labels
       },
-      spacing: {
-        '100': '25rem',        // Extra wide spacing for neatness
+      colors: {
+        'med-blue': '#003b71', // A trustworthy healthcare blue
+      },
+      borderRadius: {
+        'doc-card': '2.5rem', // Extra smooth rounded corners
       }
     },
   },
